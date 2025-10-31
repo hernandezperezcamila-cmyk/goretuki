@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CETis 47 - Gómez Palacio, Durango</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+  <header>
+    <h1>Centro de Estudios Tecnológicos Industrial y de Servicios No. 47</h1>
+    <p class="subtitulo">Formación técnica, innovación y excelencia educativa</p>
+  </header>
+
+  <!-- Carrusel de fotos -->
+  <section class="carrusel">
+    <div class="slides">
+      <img src="cetiss.jpg" alt="Carrera de Programación">
+      <img src="Cuervo 01.JPG" alt="Carrera de Mantenimiento Industrial">
+      <img src="plantel.jpeg" alt="Carrera de Química">
+      <img src="estacionamiento.jpg" alt="Carrera de Contabilidad">
+      <img src="cetiiiis.jpg" alt="Carrera de Robótica">
+      <img src="dgeti.png" alt="Carrera de Recursos Humanos">
+      <img src="cetiss.jpg" alt="cetis">
+      <img src="in.jpg" alt="institucion">
+    </div>
+    <button class="btn prev">&#10094;</button>
+    <button class="btn next">&#10095;</button>
+  </section>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="carreras.html">Carreras</a></li>
+      <li><a href="clubes.html">Clubes</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="https://escolares.mx/">Escolares</a></li>
+    </ul>
+    <form>
+      <input type="search" name="question" placeholder="Buscar...">
+      <input type="submit" value="¡Vamos!">
+    </form>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Bienvenido al CETis 47</h2>
+      <p>
+        En el CETis 47 formamos jóvenes con valores, capacidades técnicas y habilidades para el mundo laboral moderno. 
+        Ofrecemos una educación integral con opciones técnicas como Programación, Química, Contabilidad, Mantenimiento Industrial, Robótica y Recursos Humanos.
+      </p>
+
+      
+
+      <h3>Comprometidos con tu futuro</h3>
+      <p>
+        La preparatoria técnica te brinda la oportunidad de continuar estudios superiores o integrarte al mercado laboral con las competencias necesarias. 
+        ¡Tu formación comienza aquí, en el CETis 47 de Gómez Palacio!
+      </p>
+    </article>
+
+    <aside>
+      <h3>Carreras Técnicas</h3>
+      <ul>
+        <li>Programación</li>
+        <li>Mantenimiento Industrial</li>
+        <li>Química</li>
+        <li>Contabilidad</li>
+        <li>Robótica</li>
+        <li>Recursos Humanos</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 CETis 47 Gómez Palacio, Durango — Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Carrusel de imágenes automático
+    const slides = document.querySelector('.slides');
+    const images = document.querySelectorAll('.slides img');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    let index = 0;
+
+    function showSlide(i) {
+      index = (i + images.length) % images.length;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function autoSlide() {
+      showSlide(index + 1);
+    }
+
+    let interval = setInterval(autoSlide, 4000);
+
+    next.addEventListener('click', () => {
+      showSlide(index + 1);
+      resetTimer();
+    });
+    prev.addEventListener('click', () => {
+      showSlide(index - 1);
+      resetTimer();
+    });
+
+    function resetTimer() {
+      clearInterval(interval);
+      interval = setInterval(autoSlide, 4000);
+    }
+  </script>
+</body>
+</html>

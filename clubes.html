@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clubes – CETis 47 Gómez Palacio</title>
+  <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Clubes y Actividades Extracurriculares</h1>
+  </header>
+
+  <nav class="main-nav">
+    <a href="inicio.html">Inicio</a>
+    <a href="carreras.html">Carreras</a>
+    <a href="clubes.html" class="active">Clubes</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main class="container">
+    <h2>Únete a nuestros clubes estudiantiles</h2>
+    <div class="grid clubes-grid">
+      <div class="club-card">
+        <img src="robotica.jpg" alt="Club de Robótica">
+        <h3>Club de Robótica</h3>
+        <p>Desarrolla proyectos, participa en competencias y crea soluciones tecnológicas reales.</p>
+      </div>
+      <div class="club-card">
+        <img src="fut.jpg" alt="Club de Fútbol">
+        <h3>Club de Fútbol</h3>
+        <p>Forma parte del equipo, compite inter-preparatorias y vive la pasión del deporte.</p>
+      </div>
+      <div class="club-card">
+        <img src="arte.png" alt="Club de Arte y Cultura">
+        <h3>Club de Arte y Cultura</h3>
+        <p>Expresa tu creatividad en pintura, teatro, danza y música con apoyo de maestros especializados.</p>
+      </div>
+      <div class="club-card">
+        <img src="emprendimiento.png" alt="Club de Emprendimiento">
+        <h3>Club de Emprendimiento</h3>
+        <p>Desarrolla ideas de negocio, prototipos y participa en ferias de ciencia y tecnología.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> CETis 47 – Clubes 2025</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

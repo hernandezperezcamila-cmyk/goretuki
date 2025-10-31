@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio – CETis 47 Gómez Palacio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Preparatoria Técnica CETis 47</h1>
+    <p class="subtitle">Gómez Palacio, Durango · Formación técnica, humana y profesional</p>
+  </header>
+
+  <nav class="main-nav">
+    <a href="inicio.html" class="active">Inicio</a>
+    <a href="carreras.html">Carreras</a>
+    <a href="clubes.html">Clubes</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main class="container">
+    <section class="welcome">
+      <h2>Bienvenido a nuestra institución</h2>
+      <p>En CETis 47 te ofrecemos instalaciones modernas, talleres especializados, laboratorios equipados y una comunidad educativa comprometida con tu éxito.</p>
+      <img src="plantel.jpeg" alt="Instalaciones CETis 47">
+    </section>
+
+    <section class="what-we-offer">
+      <h2>Lo que ofrecemos</h2>
+      <ul>
+        <li>Talleres de mecánica, electricidad y robótica</li>
+        <li>Laboratorios de informática y redes</li>
+        <li>Actividades deportivas y culturales</li>
+        <li>Apoyo académico, orientación vocacional y convivencia escolar</li>
+      </ul>
+    </section>
+
+    <section class="gallery-small">
+      <h2>Galería rápida</h2>
+      <div class="thumbs">
+        <img src="mantenimiento.jpg" alt="Taller de mantenimiento">
+        <img src="quimica.jpeg" alt="Laboratorio de química">
+        <img src="recursos.jpeg" alt="Actividades recursos humanos">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> CETis 47 – Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

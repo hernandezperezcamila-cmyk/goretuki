@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto – CETis 47 Gómez Palacio</title>
+  <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Contacto CETis 47</h1>
+  </header>
+
+  <nav class="main-nav">
+    <a href="inicio.html">Inicio</a>
+    <a href="carreras.html">Carreras</a>
+    <a href="clubes.html">Clubes</a>
+    <a href="contacto.html" class="active">Contacto</a>
+  </nav>
+
+  <main class="container">
+    <section class="info-contact">
+      <h2>¿Dónde estamos?</h2>
+      <p><strong>Dirección:</strong> Calzada Lázaro Cárdenas S/N, Gómez Palacio, Durango C.P. 35060. :contentReference[oaicite:1]{index=1}</p>
+      <p><strong>Teléfono:</strong> 871 719 0866 :contentReference[oaicite:2]{index=2}</p>
+      <p><strong>Email:</strong> cetis047.dir@uemstis.sems.gob.mx :contentReference[oaicite:3]{index=3}</p>
+    </section>
+
+    <section class="contact-form">
+      <h2>Envíanos un mensaje</h2>
+      <form action="#" method="post" onsubmit="alert('Formulario simulado — reemplazar acción'); return false;">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" required>
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" type="email" required>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> CETis 47 – Contacto</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

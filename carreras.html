@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carreras – CETis 47 Gómez Palacio</title>
+  <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Carreras Técnicas ‹ CETis 47 ›</h1>
+  </header>
+
+  <nav class="main-nav">
+    <a href="inicio.html">Inicio</a>
+    <a href="carreras.html" class="active">Carreras</a>
+    <a href="clubes.html">Clubes</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main class="container">
+    <h2>Explora nuestras carreras técnicas</h2>
+    <div class="grid carreras-grid">
+      <div class="career-card">
+        <img src="cual-es-la-carrera-de-programacion.png" alt="Programación">
+        <h3>Programación</h3>
+        <p>Desarrollo de software, bases de datos, redes y soluciones digitales para el mundo laboral y empresarial.</p>
+      </div>
+      <div class="career-card">
+        <img src="mantenimiento.jpg" alt="Mantenimiento Industrial">
+        <h3>Mantenimiento Industrial</h3>
+        <p>Mecánica, hidráulica, neumática y mantenimiento preventivo/correctivo de equipos industriales.</p>
+      </div>
+      <div class="career-card">
+        <img src="quimica.jpeg" alt="Química">
+        <h3>Química</h3>
+        <p>Laboratorio, control de calidad y procesos químicos aplicados a la industria farmacéutica, alimentaria e industrial.</p>
+      </div>
+      <div class="career-card">
+        <img src="contabilidad.jpg" alt="Contabilidad">
+        <h3>Contabilidad</h3>
+        <p>Registro contable, administración, análisis financiero y emprendimiento en negocios y empresas.</p>
+      </div>
+      <div class="career-card">
+        <img src="robotica.jpg" alt="Robótica">
+        <h3>Robótica</h3>
+        <p>Electrónica, sensores, microcontroladores, automatización y tecnología para la industria 4.0.</p>
+      </div>
+      <div class="career-card">
+        <img src="recursos.jpeg" alt="Recursos Humanos">
+        <h3>Recursos Humanos</h3>
+        <p>Gestión del talento, relaciones laborales, selección y entrenamiento de personal para organizaciones modernas.</p>
+      </div>
+    </div>
+
+    <section class="why-choose">
+      <h2>¿Por qué elegir una carrera técnica?</h2>
+      <p>Las carreras técnicas permiten adquirir habilidades específicas, para insertarse rápidamente en el mundo laboral, emprender proyectos propios o continuar estudios superiores con ventaja.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> CETis 47 – Carreras 2025</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
